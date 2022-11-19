@@ -1,0 +1,102 @@
+@charset "UTF-8"
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    display: block;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 280px;
+    color: white;
+    text-align: center;
+    
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vh;
+    padding-bottom: 30px;
+    
+}
+header p{
+    padding-bottom: 30px;
+    font-family: var(--fonte3);
+}
+header a {
+    font-size: normal;
+    text-decoration: none;
+    color: white;
+}
+header a:hover{
+
+    text-decoration: underline;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vh;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section#img01{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+}
+section#img02{
+    background-image: url('imagens/background002.jpg');
+}
+section.imagem {
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.522);
+    
+    
+}
+section.imagem p{
+    
+    display: inline-block;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.366);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    border-radius: 5px;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: small;
+}
